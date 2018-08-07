@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+/* 
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+/* div, header, section, ul, li, footer {
+    border: solid red 1px;
+} */
+
+.container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 0 50px 0 50px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.about, .portfolio, .contact {
+    padding: 80px 0 80px 0;   
+}
+
+.about h1, .portfolio h1, .contact h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 40px 0;
+    color: #e1c285;
+}
+/* Nav */
+
+nav {
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+
+nav .logo {
+    float: left;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+nav ul {
+    /* float: right; */
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.hamburger{
+    float: right;
+    display: none;
+}
+
+.hamburger2 {
+    cursor: pointer;
+    float: right;
+    color: black;
+    margin: 17px 19px 0 0;
+    /* display: inline-block; */
+}
+
+.responsive-menu {
+    text-align: center; 
+    margin-top: 10px;
+    color: #495057;
+    display: none;
+    margin: -20px;
+}
+.m-about, .m-portfolio, .m-contact {
+    cursor: pointer;
+    display: block;
+    background: white;
+    font-size: 1.3em;
+}
+
+.m-portfolio, .m-contact {
+    padding: 0 0 30px 0;
+}
+
+.m-about {
+    padding: 30px 0;
+}
+
+.m-about p:hover, .m-portfolio p:hover, .m-contact p:hover{
+    color: #e1c285;
+}
+
+.m-about p {
+    margin-left: 48px;
+}
+
+
+
+
+/* Header */
+
+header {
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/bg2.jpg") no-repeat center center;
+    background-size: cover;
+    
+}
+
+.info {
+    padding: 200px 0;
+}
+
+.photo {
+    background: url("../images/jriv.png");
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+header h1 {
+    font-size: 4.3em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 0 30px 0;
+    font-weight: 600;  
+}
+
+header h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
+/* About */
+
+.about p {
+    line-height: 2;
+    font-size: 1.25em;
+    color: #495057;
+    font-weight: 300;
+}
+
+.about .col1 {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#youtube {
+    text-decoration: none;
+    color: #c99065;
+}
+
+
+
+/* Portfolio */
+
+.portfolio {
+    background: #e5eaee;
+}
+
+.projects-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 20px */
+}
+
+img {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-right: solid #726d6d 1px;
+    border-left: solid #726d6d 1px;
+    border-top: solid #726d6d 1px;
+}
+.desc {
+    color: #495057;
+    overflow: scroll;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom: solid #726d6d 1px;
+    border-right: solid #726d6d 1px;
+    border-left: solid #726d6d 1px;
+    height: 170px;
+}
+
+.desc h3 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.desc p {
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* Contact */
+.contact {
+    color:#666;
+    font-weight: 300;
+}
+.social {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.social i {
+    color: #c99065;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #c99065;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 300px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;   
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;    
+    }
+
+    nav ul {
+        float: right;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1026px) {
+    .projects-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;   
+    }
+
+    
+    /* .wrapper {
+        padding: 0 50px 0 50px;
+    } */
+
+}
+
+
+/* 
+@media screen and (max-width: 1026px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .wrapper {
+        padding: 0 10px 0 10px;
+    }
+} */
+
