@@ -206,7 +206,7 @@ img {
     border-bottom: solid #726d6d 1px;
     border-right: solid #726d6d 1px;
     border-left: solid #726d6d 1px;
-    height: 170px;
+    height: 200px;
 }
 
 .desc h3 {
@@ -218,11 +218,37 @@ img {
     line-height: 1.5;
 }
 
+.desc .psd {
+    color: #c99065;
+}
+
 img {
     display: block;
     width: 100%;
 }
 
+.desc .demo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0 0 0;
+    color: #f4f4f4;
+}
+
+.desc .demo.d1 {
+    margin: 35px 0 0 0;
+}
+
+
+
+.desc .demo .site, .desc .demo .code {
+    padding: 10px 10px;
+    margin: 10px;
+    width: 100px;
+    background-color: #c99065;
+    border-radius: 2px;
+    cursor: pointer;
+}
 
 /* Contact */
 .contact {
